@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-ktqt
+  namespace: e2e-demos-qcaz-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images-protected@sha256:af55c3e3fee242756728cf83b15bbf86e33a74b129ce7f587b3c1a6bccd0aec5
+        name: my-python
+        resources: {}
+status: {}
